@@ -40,9 +40,9 @@
                         
                             <td>${fieldValue(bean: teamInstance, field: "name")}</td>
                         
-                            <td>${fieldValue(bean: teamInstance, field: "player1")}</td>
+                            <td>${teamInstance?.player1?.name}</td>
                         
-                            <td>${fieldValue(bean: teamInstance, field: "player2")}</td>
+                            <td>${teamInstance?.player2?.name}</td>
                         
                         </tr>
                     </g:each>

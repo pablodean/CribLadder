@@ -32,19 +32,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="winningMargin"><g:message code="game.winningMargin.label" default="Winning Margin" /></label>
+                                  <label for="date"><g:message code="game.date.label" default="Date" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: gameInstance, field: 'winningMargin', 'errors')}">
-                                    <g:textField name="winningMargin" value="${fieldValue(bean: gameInstance, field: 'winningMargin')}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="loser"><g:message code="game.loser.label" default="Loser" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: gameInstance, field: 'loser', 'errors')}">
-                                    <g:select name="loser.id" from="${au.com.ladder.crib.Team.list()}" optionKey="id" value="${gameInstance?.loser?.id}"  />
+                                <td valign="top" class="value ${hasErrors(bean: gameInstance, field: 'date', 'errors')}">
+                                    <g:datePicker name="date" precision="day" value="${gameInstance?.date}"  />
                                 </td>
                             </tr>
                         
@@ -59,10 +50,19 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="date"><g:message code="game.date.label" default="Date" /></label>
+                                  <label for="loser"><g:message code="game.loser.label" default="Loser" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: gameInstance, field: 'date', 'errors')}">
-                                    <g:datePicker name="date" precision="day" value="${gameInstance?.date}"  />
+                                <td valign="top" class="value ${hasErrors(bean: gameInstance, field: 'loser', 'errors')}">
+                                    <g:select name="loser.id" from="${au.com.ladder.crib.Team.list()}" optionKey="id" value="${gameInstance?.loser?.id}"  />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="winningMargin"><g:message code="game.winningMargin.label" default="Winning Margin" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: gameInstance, field: 'winningMargin', 'errors')}">
+                                    <g:textField name="winningMargin" value="${fieldValue(bean: gameInstance, field: 'winningMargin')}" />
                                 </td>
                             </tr>
                         

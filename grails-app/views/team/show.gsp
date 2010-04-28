@@ -39,14 +39,14 @@
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="team.player1.label" default="Player1" /></td>
                             
-                            <td valign="top" class="value"><g:link controller="player" action="show" id="${teamInstance?.player1?.id}">${teamInstance?.player1?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:link controller="player" action="show" id="${teamInstance?.player1?.id}">${teamInstance?.player1?.name}</g:link></td>
                             
                         </tr>
                     
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="team.player2.label" default="Player2" /></td>
                             
-                            <td valign="top" class="value"><g:link controller="player" action="show" id="${teamInstance?.player2?.id}">${teamInstance?.player2?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:link controller="player" action="show" id="${teamInstance?.player2?.id}">${teamInstance?.player2?.name}</g:link></td>
                             
                         </tr>
                     

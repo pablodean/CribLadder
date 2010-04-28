@@ -24,13 +24,13 @@
                         
                             <g:sortableColumn property="id" title="${message(code: 'game.id.label', default: 'Id')}" />
                         
-                            <g:sortableColumn property="winningMargin" title="${message(code: 'game.winningMargin.label', default: 'Winning Margin')}" />
+                            <g:sortableColumn property="date" title="${message(code: 'game.date.label', default: 'Date')}" />
                         
-                            <th><g:message code="game.loser.label" default="Loser" /></th>
-                   	    
                             <th><g:message code="game.winner.label" default="Winner" /></th>
                    	    
-                            <g:sortableColumn property="date" title="${message(code: 'game.date.label', default: 'Date')}" />
+                            <th><g:message code="game.loser.label" default="Loser" /></th>
+                   	    
+                            <g:sortableColumn property="winningMargin" title="${message(code: 'game.winningMargin.label', default: 'Winning Margin')}" />
                         
                         </tr>
                     </thead>
@@ -40,13 +40,13 @@
                         
                             <td><g:link action="show" id="${gameInstance.id}">${fieldValue(bean: gameInstance, field: "id")}</g:link></td>
                         
-                            <td>${fieldValue(bean: gameInstance, field: "winningMargin")}</td>
-                        
-                            <td>${fieldValue(bean: gameInstance, field: "loser")}</td>
-                        
-                            <td>${fieldValue(bean: gameInstance, field: "winner")}</td>
-                        
                             <td><g:formatDate date="${gameInstance.date}" /></td>
+                        
+                            <td>${gameInstance?.winner?.name}</td>
+                        
+                            <td>${gameInstance?.loser?.name}</td>
+                        
+                            <td>${fieldValue(bean: gameInstance, field: "winningMargin")}</td>
                         
                         </tr>
                     </g:each>

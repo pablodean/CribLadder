@@ -30,30 +30,30 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="game.winningMargin.label" default="Winning Margin" /></td>
+                            <td valign="top" class="name"><g:message code="game.date.label" default="Date" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: gameInstance, field: "winningMargin")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="game.loser.label" default="Loser" /></td>
-                            
-                            <td valign="top" class="value"><g:link controller="team" action="show" id="${gameInstance?.loser?.id}">${gameInstance?.loser?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:formatDate date="${gameInstance?.date}" /></td>
                             
                         </tr>
                     
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="game.winner.label" default="Winner" /></td>
                             
-                            <td valign="top" class="value"><g:link controller="team" action="show" id="${gameInstance?.winner?.id}">${gameInstance?.winner?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:link controller="team" action="show" id="${gameInstance?.winner?.id}">${gameInstance?.winner?.name}</g:link></td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="game.date.label" default="Date" /></td>
+                            <td valign="top" class="name"><g:message code="game.loser.label" default="Loser" /></td>
                             
-                            <td valign="top" class="value"><g:formatDate date="${gameInstance?.date}" /></td>
+                            <td valign="top" class="value"><g:link controller="team" action="show" id="${gameInstance?.loser?.id}">${gameInstance?.loser?.name}</g:link></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="game.winningMargin.label" default="Winning Margin" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: gameInstance, field: "winningMargin")}</td>
                             
                         </tr>
                     
