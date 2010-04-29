@@ -41,7 +41,7 @@
                                     <label for="player1"><g:message code="team.player1.label" default="Player1" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: teamInstance, field: 'player1', 'errors')}">
-                                    <g:select name="player1.id" from="${au.com.ladder.crib.Player.list()}" optionKey="id" value="${teamInstance?.player1?.id}"  />
+                                    
                                 </td>
                             </tr>
                         
@@ -50,7 +50,7 @@
                                     <label for="player2"><g:message code="team.player2.label" default="Player2" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: teamInstance, field: 'player2', 'errors')}">
-                                    <g:select name="player2.id" from="${au.com.ladder.crib.Player.list()}" optionKey="id" value="${teamInstance?.player2?.id}"  />
+                                    
                                 </td>
                             </tr>
                         

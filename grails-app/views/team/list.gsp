@@ -26,10 +26,10 @@
                         
                             <g:sortableColumn property="name" title="${message(code: 'team.name.label', default: 'Name')}" />
                         
-                            <th><g:message code="team.player1.label" default="Player1" /></th>
-                   	    
-                            <th><g:message code="team.player2.label" default="Player2" /></th>
-                   	    
+                            <g:sortableColumn property="player1" title="${message(code: 'team.player1.label', default: 'Player1')}" />
+                        
+                            <g:sortableColumn property="player2" title="${message(code: 'team.player2.label', default: 'Player2')}" />
+                        
                         </tr>
                     </thead>
                     <tbody>
