@@ -8,6 +8,9 @@ class Game {
     int winningMargin
 
     static constraints = {
+        date(date:true, blank:false)
+        winner(nullable:false)
+        loser(nullable:false)
         winningMargin(min:1)
     }
 }

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Welcome to Grails</title>
+        <title>Cribbage Ladder</title>
 		<meta name="layout" content="main" />
 		<style type="text/css" media="screen">
 
@@ -100,5 +100,8 @@
 	            </ul>
 	        </div>
 		</div>
+      <div id="footer">
+          (c)Copyright 2010 Dean Macaulay & Paul Kilpatrick
+      </div>
     </body>
 </html>

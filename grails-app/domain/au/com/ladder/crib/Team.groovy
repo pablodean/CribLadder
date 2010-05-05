@@ -11,4 +11,8 @@ class Team {
         
     }
 
+//    String getName() {
+//        return player1.name + "/" + player2.name
+//    }
+
 }
